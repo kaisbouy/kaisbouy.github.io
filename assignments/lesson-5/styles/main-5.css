@@ -1,20 +1,18 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
-* { box-sizing: border-box; border: 0px; border-style: ""; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; border: 0px;  margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
     font-family: arial;
-    background-color: "";
+    background-color: white;
 }
 header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width: ~600px;
 }
 header {
-    padding; 10px;
-    font-size: 40;
+    padding; 2%;
+    font-size: 14px;
     text-align: center;
-    background: ;
     overflow: hidden;
     }
     header h1 {
