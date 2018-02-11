@@ -1,0 +1,172 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box; border: 0px; border-style: ""; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+    font-family: arial;
+    background-color: "";
+}
+
+header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: ~600px;
+    
+}
+
+header {
+    padding; 10px;
+    font-size: 40;
+    text-align: center;
+    background: ;
+    overflow: hidden;
+    }
+    header h1 {
+        margin: 2%;
+        position: relative;
+        text-align: center;
+        }
+    header img {
+        position: relative;
+        float: left;
+        margin: 15px;
+        width: 100px;
+        }
+    header .subheading {
+        position: relative;
+        }
+
+nav {
+    margin: 0 2% 0 2%;
+    }
+    nav button {
+        float: right;
+        position: fixed;
+}
+nav ul {
+    width: 100%;
+    background-color: skyblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    }
+        nav ul li {
+            
+            display: none;
+            color: black;
+            }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 6px;
+            }
+            nav ul li.active a {
+                background-color: yellow;
+                }
+            nav ul li a:hover {
+                background-color: blue;
+                color: white;
+                }
+nav img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+main {}
+    main h2 {
+        text-align: center;
+        }
+    main figure { 
+        margin: 0 0 .2rem 2%;
+        width: 96%;
+        }
+        main figure img { 
+            width: 100%;
+            }
+
+section {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    }
+section div {}
+section img {
+    width: 10em;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    left: 70%;
+    z-index: -1;
+}
+table {
+    width: 100%;
+    padding: 0;
+    }
+.forecast {
+    position: relative;
+    width: 100%;
+    padding: 1% 1% 0 0;
+    text-align: center;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-bottom: none;
+    background-color: darkgray;
+    }
+.forecast th{
+    width: 10%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightgray;
+    }
+    .forecast td{
+        margin: 0;
+        padding: 1%;
+        width: 10%;
+        text-align: center;
+        border-top-width: thin;
+        border-top: 1px gray;
+        border-right: 1px gray;
+        border-bottom: 0;
+        border-left: 1px gray;
+        border-style: solid;
+        background-color: lightgray;    
+        }
+article h3 {
+    text-align: center;
+    margin: 2%;
+    }
+article p {
+    margin: 2%
+    }
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;/* fill the page in the small/phone view */
+    margin: 0 0 0 2%;
+    }
+
+footer {
+    text-align: center;
+    }
+    footer aside {
+        background-color: skyblue;
+        padding: 5px;
+        font-size: .8em;
+}
+    footer .footer-bar {
+        padding: 5px;
+        background-color: darkblue;
+        color: white;
+        font-size: .7em;
+        }
+    footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
