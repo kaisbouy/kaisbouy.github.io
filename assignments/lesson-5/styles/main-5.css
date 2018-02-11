@@ -1,20 +1,15 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
-
 * { box-sizing: border-box; border: 0px; border-style: ""; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
-
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
     font-family: arial;
     background-color: "";
 }
-
 header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     max-width: ~600px;
-    
 }
-
 header {
     padding; 10px;
     font-size: 40;
@@ -36,7 +31,6 @@ header {
     header .subheading {
         position: relative;
         }
-
 nav {
     margin: 0 2% 0 2%;
     }
@@ -53,7 +47,6 @@ nav ul {
     display: inline-block;
     }
         nav ul li {
-            
             display: none;
             color: black;
             }
@@ -75,7 +68,6 @@ nav img {
     margin-left: auto;
     margin-right: auto;
     }
-
 main {}
     main h2 {
         text-align: center;
@@ -87,7 +79,6 @@ main {}
         main figure img { 
             width: 100%;
             }
-
 section {
     display: block;
     text-align: center;
@@ -152,7 +143,6 @@ article p.town-article img {  /* This structure refers to img elements that are 
     width: 100%;/* fill the page in the small/phone view */
     margin: 0 0 0 2%;
     }
-
 footer {
     text-align: center;
     }
@@ -170,3 +160,7 @@ footer {
     footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+@media only screen and (max-width: 600px) {
+    .forecast {
+        display: none;
+        }
