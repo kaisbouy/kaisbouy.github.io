@@ -15,8 +15,10 @@
     </head>
     <body>
 
-        <header>
-            <img src="images/hill_country_logo@0,1x.jpg" alt="The site logo">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/hill_country_logo@0,1x.jpg" alt="The site logo" srcset="images/hill_country_logo@0,1x.jpg 1x, images/hill_country_logo@0,25x.jpg 2x, images/hill_country_logo@0,5x.jpg 3x">
+            </figure>
             <h1>Hill Country Weather</h1>
             <div class="subheading">&quot;Know before you go!&quot;</div>
         </header>
@@ -40,23 +42,32 @@
         </nav>
 
         <main>
-            <figure>
+            <figure class="franklin">
                 <img src="../lesson-6/images/franklin_sm.jpg">
             </figure>
             <h2>The City of Franklin</h2>
 
-            <section>
+            <section class="summary">
                 <h3>Weather Summary</h3>    
                 <div class="highlow">
                     <p>High: 90&deg;F</p>  
                     <p>Low: 66&deg;F</p>  
                 </div>
-                <div class="current">
-                    Partly Cloudy
-                    <picture>
-                        <img src="images/sun_clouds_logo@0,25x.png" alt="Sun behind cloud.">
-                    </picture>
-                </div>   
+                <table>
+                    <tr>
+                        <td>
+                            <div class="current">
+                                Partly Cloudy
+                            </div>
+                        </td>
+                        <td>
+                            <figure class="weather_icon">
+                                <img src="images/sun_clouds_logo@0,5x.png" alt="Sun behind cloud.">
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+                   
                 <div class="conditions">
                     <p>Precipitation: 0&percnt;</p>  
                     <p>Wind Speed: 5 mph SW</p>  
@@ -100,7 +111,9 @@
             <article>
                 <h3>Franklin Breaks Record</h3>	
                 <p class="town-article">
-                    <img src="images/franklin_dry@0,1x.jpg" alt="Franklin during a dry spell.">
+                    <figure class="article_photo">
+                    <img src="images/franklin_dry@0,25x.jpg" alt="Franklin during a dry spell.">
+                    </figure>
                     A dry Sunday snapped a 53-year record in Franklin for consecutive days without rain.<br>
 
                     Franklin has gone 102 days without so much as a drizzle at Sun Lake Lodge's weather data station, breaking the previous 101-day streak set in 1964. The county came close to surpassing the streak in 2002 with 100 consecutive days without rain, according to the weather service.<br>

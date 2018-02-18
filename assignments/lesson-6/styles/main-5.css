@@ -20,11 +20,14 @@ header {
         position: relative;
         text-align: center;
         }
-    header img {
-        position: relative;
+    header figure.logo {
+        margin: 2%;
+        width: 30%;
         float: left;
-        margin: 15px;
-        width: 100px;
+        border: 1px red dashed;
+        }
+    header figure.logo img{
+        width: 100%;
         }
     header .subheading {
         position: relative;
@@ -70,12 +73,13 @@ main {}
     main h2 {
         text-align: center;
         }
-    main figure { 
+    main figure.franklin { 
         margin: 0 0 .2rem 2%;
         width: 96%;
+        border: 1px red dashed;
         }
-        main figure img { 
-            max-width: 100%;
+        main figure.franklin img { 
+            width: 100%;
             height: auto;
             }
 section {
@@ -84,14 +88,31 @@ section {
     position: relative;
     margin: 10px;
     }
-section div {}
-section img {
-    width: 10em;
-    position: absolute;
+section div {
+    margin: 2%;
+    text-align: center;
+}
+section.summary table td {
+    width: 50%;
+    border: 1px red dashed;
+    text-align: center;    
+}
+div.current {
+    text-align: right;
+    
+}
+figure.weather_icon {
+    width: 50%;
+    max-width: 500px;
+    margin: 0;
+    }
+section figure.weather_icon img {
+    width: 100%;
+    align-self: center;
+    /*position: absolute;
     right: 5%;
     bottom: 5%;
-    left: 70%;
-    z-index: -1;
+    left: 70%;*/
 }
 table {
     width: 100%;
@@ -135,12 +156,18 @@ article h3 {
     text-align: center;
     margin: 2%;
     }
-article p {
-    margin: 2%
+article {
+    margin: 2%;
     }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article figure.article_photo {
+    width: 60%;
+    height: auto;
+    margin: 2%;
+    float: right;
+    border: 1px red dashed;
+}
+article figure.article_photo img {  
     width: 100%;/* fill the page in the small/phone view */
-    margin: 0 0 0 2%;
     }
 footer {
     text-align: center;

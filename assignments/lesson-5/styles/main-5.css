@@ -3,7 +3,7 @@
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
-    font-family: arial;
+    font-family: 'Oxygen', sans-serif;
     background-color: white;
 }
 header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -20,11 +20,9 @@ header {
         position: relative;
         text-align: center;
         }
-    header img {
-        position: relative;
-        float: left;
-        margin: 15px;
-        width: 100px;
+    header figure.logo {
+        width: 20%;
+        border: 7px red dashed;
         }
     header .subheading {
         position: relative;
@@ -61,10 +59,8 @@ nav ul {
                 color: white;
                 }
 nav img {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    border: 10px red dashed;
     }
 main {}
     main h2 {
