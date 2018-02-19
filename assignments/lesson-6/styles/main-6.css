@@ -24,7 +24,6 @@ header {
         margin: 2%;
         width: 30%;
         float: left;
-        border: 1px red dashed;
         }
     header figure.logo img{
         width: 100%;
@@ -33,82 +32,85 @@ header {
         position: relative;
         }
 nav {
-    margin: 0 2% 0 2%;
-    }
-    nav button {
-        float: right;
-        position: fixed;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
+    background: #005c97; /* Old browsers */
+    background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #005c97 1%,#68cef3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */    
+    font-family: Verdana, sans-serif;
 }
 nav ul {
-    width: 100%;
-    background-color: skyblue;
     list-style-type: none;
     margin: 0;
-    padding: 5px;
-    display: inline-block;
-    }
-        nav ul li {
-            display: none;
-            color: black;
-            }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            padding: 6px;
-            }
-            nav ul li.active a {
-                background-color: yellow;
-                }
-            nav ul li a:hover {
-                background-color: blue;
-                color: white;
-                }
+    padding: 0;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+nav ul li {
+    color: black;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
+
 nav img {
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    }
+}
 main {}
     main h2 {
         text-align: center;
-        }
+    }
     main figure.franklin { 
         margin: 0 0 .2rem 2%;
         width: 96%;
-        border: 1px red dashed;
-        }
+    }
         main figure.franklin img { 
             width: 100%;
             height: auto;
-            }
+        }
 section {
     display: block;
     text-align: center;
     position: relative;
     margin: 10px;
-    }
+}
 section div {
     margin: 2%;
     text-align: center;
 }
 section.summary table td {
     width: 50%;
-    border: 1px red dashed;
-    text-align: center;    
-}
-div.current {
-    text-align: right;
-    
 }
 figure.weather_icon {
     width: 50%;
     max-width: 500px;
     margin: 0;
-    }
+}
 section figure.weather_icon img {
     width: 100%;
-    align-self: center;
     /*position: absolute;
     right: 5%;
     bottom: 5%;
@@ -116,8 +118,9 @@ section figure.weather_icon img {
 }
 table {
     width: 100%;
+    margin: 0;
     padding: 0;
-    }
+}
 .forecast {
     position: relative;
     width: 100%;
@@ -128,7 +131,7 @@ table {
     border-style: solid;
     border-bottom: none;
     background-color: darkgray;
-    }
+}
 .forecast th{
     width: 10%;
     padding: 1%;
@@ -138,7 +141,7 @@ table {
     border-style: solid;
     border-color: gray;
     background-color: lightgray;
-    }
+}
     .forecast td{
         margin: 0;
         padding: 1%;
@@ -151,42 +154,48 @@ table {
         border-left: 1px gray;
         border-style: solid;
         background-color: lightgray;    
-        }
+    }
 article h3 {
     text-align: center;
     margin: 2%;
-    }
+}
 article {
     margin: 2%;
-    }
+}
 article figure.article_photo {
     width: 60%;
     height: auto;
     margin: 2%;
     float: right;
-    border: 1px red dashed;
 }
 article figure.article_photo img {  
     width: 100%;/* fill the page in the small/phone view */
-    }
+}
 footer {
     text-align: center;
-    }
+}
     footer aside {
         background-color: skyblue;
         padding: 5px;
         font-size: .8em;
-}
+    }
     footer .footer-bar {
         padding: 5px;
         background-color: darkblue;
         color: white;
         font-size: .7em;
-        }
+    }
     footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
 @media only screen and (max-width: 600px) {
     .forecast {
         display: none;
-        }
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
