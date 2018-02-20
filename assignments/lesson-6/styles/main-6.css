@@ -24,6 +24,7 @@ header {
         margin: 2%;
         width: 30%;
         float: left;
+        max-width: 200px;
         }
     header figure.logo img{
         width: 100%;
@@ -39,10 +40,11 @@ nav {
     background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */    
     font-family: Verdana, sans-serif;
+    
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 2%;
     padding: 0;
 }
 nav button {
@@ -106,7 +108,7 @@ section.summary table td {
 }
 figure.weather_icon {
     width: 50%;
-    max-width: 500px;
+    max-width: 200px;
     margin: 0;
 }
 section figure.weather_icon img {
@@ -163,13 +165,7 @@ article {
     margin: 2%;
 }
 article figure.article_photo {
-    width: 60%;
-    height: auto;
     margin: 2%;
-    float: right;
-}
-article figure.article_photo img {  
-    width: 100%;/* fill the page in the small/phone view */
 }
 footer {
     text-align: center;
@@ -191,11 +187,16 @@ footer {
 @media only screen and (max-width: 600px) {
     .forecast {
         display: none;
+        
     }
     
     .clearfix:after {
         content: "";
         display: table;
         clear: both;
+    }
+
+    article figure.article_photo img {  
+        width: 100%;/* fill the page in the small/phone view */
     }
 }

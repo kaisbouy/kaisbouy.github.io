@@ -3,6 +3,9 @@
 
     nav ul li a {padding: .6rem 1rem;}
     
-    article p.town-article img { width: 29.333%; }
-
+}
+article figure.article_photo img{
+    float: right;
+    padding: 0 2% 2% 0;
+    max-height: 300px;
 }

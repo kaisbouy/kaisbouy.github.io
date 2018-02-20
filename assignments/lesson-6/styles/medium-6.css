@@ -27,7 +27,10 @@
         }
 
     section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
-
-    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-
+    
+    article figure.article_photo {
+        width: 62.666%; 
+        float: right;
+        max-height: 800px;
+    }
 }
