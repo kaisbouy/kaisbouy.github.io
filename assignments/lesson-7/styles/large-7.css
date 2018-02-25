@@ -1,0 +1,37 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header {
+        display: flex;
+        padding; 2%;
+        font-size: 24px;
+        text-align: center;
+    }
+    header h1 {
+        display: flex;
+        margin: 2%;
+        text-align: center;
+    }
+    nav ul li a {padding: .6rem 1rem;}
+    nav ul li {
+        float: left;
+        font-size: 1em;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
+        background: #005c97; /* Old browsers */
+        background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #005c97 1%,#68cef3 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */
+    }
+    
+    /* Gallery grid container*/
+    .container {
+        display: grid;
+        margin: 0 2%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+article figure.article_photo img{
+    padding: 0 2% 2% 0;
+    max-height: 300px;
+}
