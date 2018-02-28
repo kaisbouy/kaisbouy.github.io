@@ -30,28 +30,19 @@ header {
         margin: 2%;
         }
 nav {
-    display: flex;
     margin: 0 2%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
-    background: #005c97; /* Old browsers */
-    background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #005c97 1%,#68cef3 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */    
     font-family: Verdana, sans-serif;
-    
 }
 nav .container{
-    display: flex;
     flex-wrap: nowrap;
 }
 nav ul {
+    display: flex;
     flex-direction: column;
     list-style-type: none;
     padding: 0;
 }
 nav button {
-    display: flex;
     margin: 0;
     padding: 5px;
     /*background-color: none;*/
@@ -60,11 +51,11 @@ nav button {
     color: darkblue;
 }
 nav ul li {
+    display: flex;
     font-size: .8em;
     color: black;
 }
 nav ul li a {
-    display: flex;
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
@@ -101,7 +92,7 @@ main {}
     .container {
         display: grid;
         margin: 0 2%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
     * {box-sizing: border-box;}
 

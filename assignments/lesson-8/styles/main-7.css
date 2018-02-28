@@ -1,0 +1,218 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+* { box-sizing: border-box; border: 0px dashed red; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+    font-family: arial;
+    background-color: white;
+}
+header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+header {
+    display: flex;
+    padding; 2%;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    }
+    header h1 {
+        display: flex;
+        margin: 2%;
+        text-align: center;
+        }
+    header figure.logo {
+        margin: 2%;
+        }
+    header figure.logo img{
+        }
+    header .subheading {
+        margin: 2%;
+        }
+nav {
+    margin: 0 2%;
+    font-family: Verdana, sans-serif;
+}
+nav .container{
+    flex-wrap: nowrap;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+nav button {
+    margin: 0;
+    padding: 5px;
+    /*background-color: none;*/
+    border: none;
+    font-size: 1.6rem;
+    color: darkblue;
+}
+nav ul li {
+    display: flex;
+    font-size: .8em;
+    color: black;
+}
+nav ul li a {
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
+
+nav img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {}
+    main h2 {
+        text-align: center;
+    }
+    main figure.franklin { 
+        margin: 0 0 .2rem 2%;
+        width: 96%;
+    }
+        main figure.franklin img { 
+            width: 100%;
+            height: auto;
+        }
+
+/* Gallery grid container*/
+    .container {
+        display: grid;
+        margin: 0 2%;
+        grid-template-columns: 100%;
+    }
+    * {box-sizing: border-box;}
+
+    .container {
+        border: 2px solid #005c97;
+        border-radius: 5px;
+        background-color: #fff4e6;
+    }
+
+    .container > div {
+        border: 2px solid #ffa94d;
+        border-radius: 5px;
+        background-color: #ffd8a8;
+        padding: 1em;
+        color: #005c97;
+    }
+
+section {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+section div {
+    margin: 2%;
+    text-align: center;
+}
+section.summary table td {
+    width: 48%;
+}
+figure.weather_icon {
+    width: 48%;
+    max-width: 200px;
+    margin: 0;
+}
+section figure.weather_icon img {
+    width: 96%;
+    /*position: absolute;
+    right: 5%;
+    bottom: 5%;
+    left: 70%;*/
+}
+table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.forecast {
+    position: relative;
+    width: 96%;
+    padding: 1% 1%;
+    text-align: center;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-bottom: none;
+    background-color: darkgray;
+}
+.forecast th{
+    width: 10%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightgray;
+}
+    .forecast td{
+        margin: 0;
+        padding: 1%;
+        width: 10%;
+        text-align: center;
+        border-top-width: thin;
+        border-top: 1px gray;
+        border-right: 1px gray;
+        border-bottom: 0;
+        border-left: 1px gray;
+        border-style: solid;
+        background-color: lightgray;    
+    }
+article h3 {
+    text-align: center;
+    margin: 2%;
+}
+article {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin: 2%;
+}
+article figure.article_photo {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer {
+    margin: 0 2%;
+    text-align: center;
+}
+    footer aside {
+        background-color: skyblue;
+        padding: 5px;
+        font-size: .8em;
+    }
+    footer .footer-bar {
+        padding: 5px;
+        background-color: darkblue;
+        color: white;
+        font-size: .7em;
+    }
+    footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+@media only screen and (max-width: 600px) {
+    .forecast {
+        display: none;
+        
+    }
+    
+    article figure.article_photo img {  
+        width: 100%;/* fill the page in the small/phone view */
+    }
+}
