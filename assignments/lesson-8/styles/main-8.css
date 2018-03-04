@@ -205,6 +205,115 @@ footer {
     }
     footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
+/*----------------------- FORM STUFF ---------------------------*/
+form#conference {
+    margin: 1em 3%;
+}
+fieldset {
+    background-color: skyblue;
+    border-radius: .8em;
+    margin: 1.5em 2%;
+    border: darkblue solid 1px;
+}
+legend {
+    color: darkblue;
+    margin-left: 6%;
+    padding: .5em;
+    border: darkblue solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: darkblue;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /*remove the apple mobile default styling*/
+    color: black;
+    border: solid 1px darkblue;
+    border-radius: 7px;
+    width: 50%;
+    margin: 2%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .6em;
+    background: rgb(252, 238,0); /* Old browsers */
+    box-shadow: 4px 4px 10px #666;
+}
+
+/*NEW HTML5 VALIDATION*/
+label input {
+    background-color: #f4f2ef;
+    color: #917a56;
+    padding: .3em .3em .3em 2em;
+    border: solid 1px darkblue;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;
+}
+input[type="radio"] {
+    background-color: red;
+    margin-right: -250px;
+    display: inline-flex;
+    padding: 2%;
+}
+textarea {
+    background-color: #f4f2ef;
+    color: #917a56;
+    padding: .3em .3em .3em 2em;
+    margin: 2%;
+    width: 90%;
+    max-width: 500px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: .9em;
+    background-repeat: no-repeat;
+/*
+    background-position: 4px -11px;
+*/
+    
+span.asterix {
+        color: red;
+    }
+}
+/*The input that currently has the focus*/
+input:focus {
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+/*identifies all required fields*/
+input:required {
+    background-position: 4px -61px; /*shows the red star*/
+}
+/*Validation*/
+input:focus:invalid {
+    background-position: 4px -111px; /*shows the yellow circle*/
+}
+input:required:valid {
+    background-color: #fff;
+    background-position: 4px -161px; /*shows the green check*/
+}
+
+
+
+
+
+
 /* Other Class Selectors */
 @media only screen and (max-width: 600px) {
     .forecast {
