@@ -288,9 +288,7 @@ textarea {
     background-position: 4px -11px;
 */
     
-span.asterix {
-        color: red;
-    }
+
 }
 /*The input that currently has the focus*/
 input:focus {
