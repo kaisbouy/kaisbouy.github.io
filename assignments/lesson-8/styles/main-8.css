@@ -78,6 +78,9 @@ nav img {
 main {
     margin: 2%;
 }
+main h1 {
+    margin: 2%;
+}
     main h2 {
         text-align: center;
     }
