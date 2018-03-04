@@ -245,6 +245,24 @@ label span {
     padding-bottom: .2em;
 }
 
+span#inDanger {
+    margin: .5em;
+    font-size: .8em;
+    color: darkblue;
+}
+select {
+    color: darkblue;
+    font-size: .8em;
+    margin: 0 0 0 .5em;
+    padding: .5em;
+    border: darkblue solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+    
+}
+
+
+
 input.submitBtn {
     -webkit-appearance: none; /*remove the apple mobile default styling*/
     color: black;
@@ -274,9 +292,8 @@ label input {
     background-position: 4px -11px;
 }
 input[type="radio"] {
-    background-color: red;
-    margin-right: -250px;
-    display: inline-flex;
+    margin: 0 0 0 .5em;
+    display: inline;
     padding: 2%;
 }
 textarea {

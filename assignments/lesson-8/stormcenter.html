@@ -76,21 +76,19 @@
                             <input type="range" id="how_bad" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="threatLevel"></span>
                             
-                            <label for="regions"><span>Storm Region:</span> 
-                                <input type="text" name="regions" list="hillCountry">
-                            <datalist id="hillCountry">
+                            <label for="regions"><span>Storm Region:</span></label>
+
                                 <select>
-                                    <option value="Select Region" disabled>Select Region</option>
-                                <option value="Franklin">Franklin</option>
-                                <option value="Greenville">Greenville</option>
-                                <option value="Springfield">Springfield</option>
+                                    <option value="" disabled selected>Select Region</option>
+                                    <option value="Franklin">Franklin</option>
+                                    <option value="Greenville">Greenville</option>
+                                    <option value="Springfield">Springfield</option>
                                 </select>
-                            </datalist>
-                            </label>
-                            <span id="inDanger">ARE YOU IN DANGER?</span></br>
-                        <input type="radio" name="yes" value="Yes"> Yes</input></br>
-            <input type="radio" name="maybe" value="Maybe"> Maybe</input></br>
-    <input type="radio" name="no" value="No"> No</input></br>
+                            
+                            <label><span>Are you in danger?</span></label>
+                                <input type="radio" name="danger" value="Yes"><span id="inDanger" name="danger">Yes</span></input></br></br>
+            <input type="radio" name="danger" value="Maybe"><span id="inDanger" name="danger">Maybe</span></input></br></br>
+<input type="radio" name="danger" value="No"><span id="inDanger" name="danger">No</span></input></br></br>
 
 <textarea>Additional information or comments...</textarea>
 
