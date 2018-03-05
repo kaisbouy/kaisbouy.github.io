@@ -17,12 +17,16 @@
     
     nav ul {
         margin-left: 2%;
-    }
+        margin-bottom: 0;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        }
     
     nav ul li {
         float: left;
         font-size: .7em;
         }
+
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
@@ -32,14 +36,18 @@
     section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
     
     /* Gallery grid container*/
-    .container {
+    #container {
         display: grid;
         margin: 0 2%;
         grid-template-columns: 50% 50%;
     }
     
-    article figure.article_photo {
-        width: 62.666%; 
-        max-height: 300px;
+    figure.article_photo {
+        float: right;
+        width: 62.666%;
     }
+    article p{
+        word-wrap: normal;
+    }
+
 }

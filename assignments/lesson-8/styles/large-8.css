@@ -11,14 +11,24 @@
         margin: 2%;
         text-align: center;
     }
+    nav ul {
+        margin-left: 2%;
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+    
     nav ul li a {padding: .6rem 1rem;}
     nav ul li {
         float: left;
         font-size: 1em;
     }
     
+    .article_photo {
+        width: 66.66%;
+    }
+    
     /* Gallery grid container*/
-    .container {
+    #container {
         display: grid;
         margin: 0 2%;
         grid-template-columns: 30% 30% 30%;
