@@ -1,0 +1,375 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+* { box-sizing: border-box; border: 0px dashed red; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+    font-family: arial;
+    background-color: white;
+}
+header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    
+}
+header {
+    display: flex;
+    padding; 2%;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    }
+    header h1 {
+        margin: 2%;
+        text-align: center;
+        }
+
+    h2, h5 {
+    margin: 2%;
+    }
+
+    header figure.logo {
+        margin: 2%;
+        }
+
+    header figure.logo img{
+        }
+
+    header .subheading {
+        margin: 2%;
+        }
+
+nav {
+    margin: 0 2%;
+    font-family: Verdana, sans-serif;
+}
+
+nav .container {
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
+    background: #005c97; /* Old browsers */
+    background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #005c97 1%,#68cef3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */
+}
+nav button {
+    margin: 0;
+    padding: 5px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
+    background: #005c97; /* Old browsers */
+    background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #005c97 1%,#68cef3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #005c97 1%,#68cef3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005c97', endColorstr='#68cef3',GradientType=0 ); /* IE6-9 */
+    border: none;
+    font-size: 1.6rem;
+    color: darkblue;
+}
+nav ul li {
+    display: flex;
+    font-size: .8em;
+    color: black;
+}
+nav ul li a {
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
+
+nav img {}
+main {
+    margin: 0 2%;
+}
+main p {
+    margin: 0 2%;
+}
+main h1 {
+    margin: 0 2%;
+}
+    main h2 {
+        text-align: center;
+    }
+    main figure.franklin { 
+        margin: 0;
+        width: 100%;
+    }
+        main figure.franklin img { 
+            width: 100%;
+            height: auto;
+        }
+
+/*--- json display area ---*/
+div#city{
+    border: 1px dashed red;
+}
+
+/* Gallery grid container*/
+    .container {
+        display: grid;
+        margin: 0 2%;
+        grid-template-columns: 100%;
+    }
+    * {box-sizing: border-box;}
+
+    .container {
+        border: 2px solid #005c97;
+        border-radius: 5px;
+        background-color: #fff4e6;
+    }
+
+    .container > div {
+        border: 2px solid #ffa94d;
+        border-radius: 5px;
+        background-color: #ffd8a8;
+        padding: 1em;
+        color: #005c97;
+    }
+
+section {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+section div {
+    margin: 2%;
+    text-align: center;
+}
+section.summary table td {
+    width: 48%;
+}
+figure.weather_icon {
+    width: 48%;
+    max-width: 200px;
+    margin: 0;
+}
+section figure.weather_icon img {
+    width: 96%;
+    /*position: absolute;
+    right: 5%;
+    bottom: 5%;
+    left: 70%;*/
+}
+table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.forecast {
+    position: relative;
+    width: 96%;
+    padding: 1% 1%;
+    text-align: center;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-bottom: none;
+    background-color: darkgray;
+}
+.forecast th{
+    width: 10%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: lightgray;
+}
+    .forecast td{
+        margin: 0;
+        padding: 1%;
+        width: 10%;
+        text-align: center;
+        border-top-width: thin;
+        border-top: 1px gray;
+        border-right: 1px gray;
+        border-bottom: 0;
+        border-left: 1px gray;
+        border-style: solid;
+        background-color: lightgray;    
+    }
+article h3 {
+    text-align: center;
+    margin: 2%;
+}
+article {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin: 2%;
+}
+article figure.article_photo {
+    float: right;
+}
+footer {
+    margin: 0 2%;
+    text-align: center;
+}
+    footer aside {
+        background-color: skyblue;
+        padding: 5px;
+        font-size: .8em;
+    }
+    footer .footer-bar {
+        padding: 5px;
+        background-color: darkblue;
+        color: white;
+        font-size: .7em;
+    }
+    footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/*----------------------- FORM STUFF ---------------------------*/
+form#conference {
+    margin: 1em 3%;
+}
+fieldset {
+    background-color: skyblue;
+    border-radius: .8em;
+    margin: 1.5em 2%;
+    border: darkblue solid 1px;
+}
+legend {
+    color: darkblue;
+    margin-left: 6%;
+    padding: .5em;
+    border: darkblue solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: darkblue;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+span#inDanger {
+    margin: .5em;
+    font-size: .8em;
+    color: darkblue;
+}
+select {
+    color: darkblue;
+    font-size: .8em;
+    margin: 0 0 0 .5em;
+    padding: .3em .3em .3em 2em;
+    border: darkblue solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+    width: 90%;
+    max-width: 500px;
+    height: 2.2em;
+    
+}
+
+
+
+input.submitBtn {
+    -webkit-appearance: none; /*remove the apple mobile default styling*/
+    color: black;
+    border: solid 1px darkblue;
+    border-radius: 7px;
+    width: 50%;
+    margin: 2%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .6em;
+    background: rgb(252, 238,0); /* Old browsers */
+    box-shadow: 4px 4px 10px #666;
+}
+
+/*NEW HTML5 VALIDATION*/
+label input {
+    background-color: #f4f2ef;
+    color: #917a56;
+    padding: .3em .3em .3em 2em;
+    border: solid 1px darkblue;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;
+}
+input[type="radio"] {
+    margin: 0 0 0 .5em;
+    display: inline;
+    padding: 2%;
+}
+textarea {
+    background-color: #f4f2ef;
+    color: #917a56;
+    padding: .3em .3em .3em 2em;
+    margin: 2%;
+    width: 90%;
+    max-width: 500px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: .9em;
+    background-repeat: no-repeat;
+/*
+    background-position: 4px -11px;
+*/
+    
+
+}
+/*The input that currently has the focus*/
+input:focus {
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+/*identifies all required fields*/
+input:required {
+    background-position: 4px -61px; /*shows the red star*/
+}
+/*Validation*/
+input:focus:invalid {
+    background-position: 4px -111px; /*shows the yellow circle*/
+}
+input:required:valid {
+    background-color: #fff;
+    background-position: 4px -161px; /*shows the green check*/
+}
+
+
+
+
+
+
+/* Other Class Selectors */
+@media only screen and (max-width: 600px) {
+    .forecast {
+        display: none;
+        
+    }
+    
+    .article_photo {  
+        width: 98%;
+        /* fill the page in the small/phone view */
+    }
+}
