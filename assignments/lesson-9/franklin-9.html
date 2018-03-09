@@ -48,38 +48,23 @@
                              images/franklin_lg.jpg 1680w,
                              ">
             </figure>
-            <h2>The City of Franklin</h2>
-
             <section class="summary">
-                <h3>Weather Summary</h3>    
-                <div class="highlow">
-                    <p>High: <span id="hiTemp">70</span>&deg;F</p>  
-                <p>Low: <span id="loTemp">30</span>&deg;F</p>  
-                </div>
-                <table class="current">
-                    <tr>
-                        <td>
-                            <div id="currently">
-                                Partly Cloudy
-                            </div>
-                        </td>
-                        <td>
-                            <figure class="weather_icon">
-                                <img src="images/sun_clouds.jpg" alt="Sun behind cloud." sizes="33vw"
-                                     srcset="images/sun_clouds175.jpg 300w,
-                                             images/sun_clouds213.jpg 700w,
-                                             ">
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
-                   
-                <div class="conditions">
-                    <p>Precipitation: 0&percnt;</p>  
-                    <p>Wind Speed: <span id="windy">5</span> mph SW</p>
-                    <p>Wind Chill: <span id="chilly"></span>&deg;F</p>  
+                
+<!--Weather Underground json is displayed here-->
+                <h3>Weather Conditions for</h3> 
+                <h1><span id="place"> City</span></h1>
 
-                </div>           
+                <p><h1><span id="currentTemp">90</span>&deg;F</h1><span id="weather">partly cloudy</span></p>
+
+                <img id="w_icon" src="" alt="current weather" >
+                
+                <p> Precipitation: <span id="precip">0.10</span> in.</p>
+                <p> Humidity: <span id="humidity">50</span></p>
+                <p> Wind: <span id="windSpeed">7</span> MPH</p>
+                <p> Windchill: <span id="windChill">12</span>&deg;F</p>
+                <p> Forecast: <span id="forecast">blah blah blah</span></p>
+
+
             </section>
 
             <section class="forecast">
@@ -151,9 +136,9 @@
             </aside>
             <p class="footer-bar">&copy;2017 All Rights Reserved &nbsp; &#8226; &nbsp; Hill Country Weather &nbsp; &#8226; &nbsp; <span id="currentdate">myDate()</span></p>
         </footer>
-        <script src="scripts/windchill.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wu-weather.js"></script>
 
     </body>
 </html>
