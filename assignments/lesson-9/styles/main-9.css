@@ -96,12 +96,15 @@ main {
     margin: 0 2%;
 }
 main p {
+    display: block;
     margin: 0 2%;
 }
 main h1 {
+    display: block;
     margin: 0 2%;
 }
     main h2 {
+        display: block;
         text-align: center;
     }
     main figure.franklin { 
@@ -114,8 +117,13 @@ main h1 {
         }
 
 /*--- json display area ---*/
+
 div#city{
     border: 1px dashed red;
+}
+
+main article {
+    display: block;
 }
 
 /* Gallery grid container*/
@@ -140,12 +148,43 @@ div#city{
         color: #005c97;
     }
 
-section {
-    display: block;
+article section {
+    display: inline-flex;
+    flex-direction: row;
     text-align: center;
     position: relative;
     margin: 10px;
 }
+
+main section.townData{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main section.townData article ul li {
+    list-style-type: none;
+    margin: 7px;
+}
+main article{
+    border-radius: 10px;
+    padding: 12;
+    text-align: center;
+    margin: 1.7vw;
+    border: 3px solid dodgerblue;
+}
+
+main#index article{
+    margin: 8px;
+    border: 3px solid dodgerblue;
+}
+
+.townData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 section div {
     margin: 2%;
     text-align: center;
@@ -293,6 +332,7 @@ input.submitBtn {
     border: solid 1px darkblue;
     border-radius: 7px;
     width: 50%;
+    max-width: 200px;
     margin: 2%;
     font-size: 1em;
     font-weight: bold;
