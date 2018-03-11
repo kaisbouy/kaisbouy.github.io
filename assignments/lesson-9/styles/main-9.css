@@ -189,8 +189,8 @@ section div {
     margin: 2%;
     text-align: center;
 }
-section.summary table td {
-    width: 48%;
+section.summary {
+    text-align: center;
 }
 figure.weather_icon {
     width: 48%;
