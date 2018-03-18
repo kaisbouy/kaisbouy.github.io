@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="Pictures of weather related images from cities in the Hill Country.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo300.jpg" alt="Hill Country logo" sizes="30vw"
+                     srcset="images/logo100.jpg 200w,
+                             images/logo200.jpg 300w,
+                             images/logo300.jpg 700w,
+                             ">
+            </figure>
+            <h1>Hill Country Weather</h1>
+            <div class="subheading">&quot;Know before you go!&quot;</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="container">
+                <div class="img1"><img src="images/gallery/500px/clouds_500px.jpg">
+                    <br>
+                    <p>Image One</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+                <div class="img2"><img src="images/gallery/500px/fall_500px.jpg">
+                    <br>
+                    <p>Image Two</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+                <div class="img3"><img src="images/gallery/500px/golf_500px.jpg">
+                    <br>
+                    <p>Image Three</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+                <div class="img4"><img src="images/gallery/500px/spring_500px.jpg">
+                    <br>
+                    <p>Image Four</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+                <div class="img5"><img src="images/gallery/500px/snowscape_500px.jpg">
+                    <br>
+                    <p>Image Five</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+                <div class="img6"><img src="images/gallery/500px/supercell_500px.jpg">
+                    <br>
+                    <p>Image Six</p>
+                    <p>Blah blah blah, yadda yadda yadda. Filler text filler text.</p>
+                </div>
+
+            </div>
+           
+        </main>
+
+        <footer>
+            <aside>
+                <strong>Hill Country Weather</strong><br>
+                10155 Davis Ave<br>
+                Hilldale, TX 78255<br>
+                (210) 555-5555<br>
+                weather@hillcountry.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved &nbsp; &#8226; &nbsp; Hill Country Weather &nbsp; &#8226; &nbsp; <span id="currentdate">myDate()</span></p>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+</html>

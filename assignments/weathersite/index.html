@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hill Country Weather</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="Current weather, temperature, events, and other facts about the Hill Country.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Oxygen sans-serif" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+        <link href="scripts/wu-weather.js"> <!--not sure if javascript needs the rel attribute-->
+
+    </head>
+    <body>
+
+        <header>
+            <figure class="logo">
+                <img src="images/logo300.jpg" alt="Hill Country logo" sizes="30vw"
+                     srcset="images/logo100.jpg 300w,
+                             images/logo200.jpg 400w,
+                             images/logo300.jpg 500w,
+                             ">
+            </figure>
+            <h1>Hill&nbsp;Country Weather</h1>
+			<div class="subheading">
+				<h3><em>Know&nbsp;before&nbsp;you&nbsp;go.</em></h3>
+			</div>
+        </header>
+
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <figure class="franklin">
+                <img src="images/hill_country.jpg" alt="Hill Country at dusk.">
+            </figure>
+            <h2>Welcome to Hill Country</h2>
+            <h5>Get the latest information on weather and upcoming events by visiting each town page. </h5>
+            <section class="townData"></section>
+            
+        </main>
+
+        <footer>
+            <aside class="clearfix">
+                <strong>Hill Country Weather</strong><br>
+                10155 Davis Ave<br>
+                Hilldale, TX 78255<br>
+                (210) 555-5555<br>
+                weather@hillcountry.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved &nbsp; &#8226; &nbsp; Hill Country Weather &nbsp; &#8226; &nbsp; <span id="currentdate">myDate()</span></p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wu-weather.js"></script>
+        <script src="scripts/townStats.js"></script>
+
+    </body>
+</html>

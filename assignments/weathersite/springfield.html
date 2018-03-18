@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Springfield City</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="Current weather, temperature, events, and other facts about Springfield City.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+
+    </head>
+    <body>
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo300.jpg" alt="Hill Country logo" sizes="30vw"
+                     srcset="images/logo100.jpg 200w,
+                             images/logo200.jpg 300w,
+                             images/logo300.jpg 700w,
+                             ">
+            </figure>
+            <h1>Hill Country Weather</h1>
+            <div class="subheading">&quot;Know before you go!&quot;</div>
+        </header>
+
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <figure class="franklin">
+                <img src="images/springfield2_0.jpeg" alt="Blue skies over Franklin City.">
+            </figure>
+            <section class="summary">
+                
+<!--Weather Underground json is displayed here-->
+                <h3>Weather Conditions for</h3> 
+                <h1><span id="place"> City</span></h1>
+
+                <p><h1><span id="currentTemp">90</span>&deg;F</h1><span id="weather">partly cloudy</span></p>
+
+                <img id="w_icon" src="" alt="current weather" >
+                
+                <p> Precipitation: <span id="precip">0.10</span> in.</p>
+                <p> Humidity: <span id="humidity">50</span></p>
+                <p> Wind: <span id="windSpeed">7</span> MPH</p>
+                <p> Windchill: <span id="windChill">12</span>&deg;F</p>
+                <p> Forecast: <span id="forecast">blah blah blah</span></p>
+
+
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article class="clearfix">
+                <h3>Springfield is the place to be!</h3>	
+                    <figure class="article_photo">
+                    <img src="images/springfield1_0.jpeg" alt="Waterfoul return to a Springfield pond.">
+                    </figure>
+                <p class="town-article">
+
+                    A dry Sunday snapped a 53-year record in Franklin for consecutive days without rain.<br>
+
+                    Franklin has gone 102 days without so much as a drizzle at Sun Lake Lodge's weather data station, breaking the previous 101-day streak set in 1964. The county came close to surpassing the streak in 2002 with 100 consecutive days without rain, according to the weather service.<br>
+
+                    Parts of the west and northwest side of Franklin saw some light sprinkles last week, but it was not counted against the streak because no rain was recorded at the lodge.<br>
+
+                    The next record weather officials are monitoring is the number of days without measurable precipitation, which the weather service considers to be any rainfall more than a hundredth of an inch. The standing 150-day record was set in 1959. The closest the Franklin has gotten to breaking that streak was a 146-day dry stretch in 2000.<br>
+
+                    No rain is expected in Franklin for the rest of the week.
+                </p>
+            </article>		  
+
+        </main>
+
+        <footer>
+            <aside class="clearfix">
+                <strong>Hill Country Weather</strong><br>
+                10155 Davis Ave<br>
+                Hilldale, TX 78255<br>
+                (210) 555-5555<br>
+                weather@hillcountry.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved &nbsp; &#8226; &nbsp; Hill Country Weather &nbsp; &#8226; &nbsp; <span id="currentdate">myDate()</span></p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/springfield-weather.js"></script>
+
+    </body>
+</html>
