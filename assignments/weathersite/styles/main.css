@@ -121,9 +121,7 @@ main h1 {
 
 /*--- json display area ---*/
 
-div#city{
-    border: 1px dashed red;
-}
+
 
 main article {
     display: block;
