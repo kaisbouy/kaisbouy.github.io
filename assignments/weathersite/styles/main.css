@@ -292,7 +292,7 @@ article {
 }
 article figure.article_photo{
 	float: right;
-	width: 66%;
+	width: 50%;
 	margin: 0 2% 2% 2%;
 }
 article figure.article_photo img{
