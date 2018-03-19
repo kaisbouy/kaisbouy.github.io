@@ -278,6 +278,12 @@ article h3 {
     text-align: center;
     margin: 2%;
 }
+
+p.town-article {
+	text-align: left;
+	margin-bottom: 2%;
+}
+
 article {
     display: flex;
     flex-flow: row wrap;
