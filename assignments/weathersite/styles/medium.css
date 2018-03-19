@@ -47,13 +47,17 @@
         padding: .8rem 1rem;
         }
 
-    section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
+    section.forecast {
+		display: block;
+		margin-top: 2%;
+	}  /* show the 10-day forecast with the medium view and up */
     
-    /* Gallery grid container*/
-    #container {
+	/*Gallery Page*/
+    .gallery {
         display: grid;
-        margin: 0 2%;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		grid-column-gap: 1em;
     }
   
     article p{

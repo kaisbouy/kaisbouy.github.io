@@ -22,13 +22,13 @@
         font-size: 1em;
     }
     
-    /* Gallery grid container*/
-    #container {
+	    /*Gallery Page*/
+    .gallery {
         display: grid;
-        margin: 0 2%;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+		grid-row-gap: 1em;
+		grid-column-gap: 1em;
     }
-    
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
