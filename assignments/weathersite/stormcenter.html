@@ -18,14 +18,12 @@
 
         <header class="clearfix">
             <figure class="logo">
-                <img src="images/logo300.jpg" alt="Hill Country logo" sizes="30vw"
-                     srcset="images/logo100.jpg 200w,
-                             images/logo200.jpg 300w,
-                             images/logo300.jpg 700w,
+                <img src="images/hill_countrysmall.png" alt="Hill Country logo" sizes="80vw"
+                     srcset="images/hill_countrysmall.png 400w,
+                             images/hill_countrymed.png 800w,
+                             images/hill_countrylarge.png 1200w,
                              ">
             </figure>
-            <h1>Hill Country Weather</h1>
-            <div class="subheading">&quot;Know before you go!&quot;</div>
         </header>
 
         <nav class="container">
@@ -46,14 +44,17 @@
             <h1>Report a storm or weather event.</h1>
 
                 <div class="form">
-                    <p>Progress:<progress value="3" max="5"></progress></p>
                     <form action="thanks.html">
 
                         <fieldset>
                             <legend><span>Contact Information (&ast;required)</span></legend>
+							
                             <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required title="Provide your full name"></label>
+							
                             <label><span>Email:</span><input name="email" type="email" value="" placeholder="your_name@gmail.com" required title="Provide a valid email address"></label>
+							
                             <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="(801) 867-5309" pattern="[0-9()- ]{10,20}"required title="Provide a valid phone number"></label>
+							
                             <label><span>Zip Code:</span><input name="zip" type="number" value="" placeholder="83424" pattern="[0-9]{5,10}"required title="Provide your zip code"></label>
                         </fieldset>
 
@@ -72,10 +73,10 @@
                                         <option value="Tornado"></option>
                                     </datalist>
                                 </label>
-                            <label for="severity"><span>Storm Severity (1 to 10)</span></label>
-                            <input type="range" id="how_bad" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="threatLevel"></span>
-                            
+                            <label for="severity"><span>Storm Severity (1 to 10)</span>
+                            <input id="slider" name="howBad" type="range" value="5" min="1" max="10" step="1" oninput="threatLevel(this.value)" onchange="threatLevel(this.value)">
+                            <span id="stormLevel">7</span>
+                            </label>
                             <label for="regions"><span>Storm Region:</span></label>
 
                                 <select>
@@ -139,6 +140,7 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
+		<script src="scripts/threatLevel.js"></script>
 
     </body>
 </html>

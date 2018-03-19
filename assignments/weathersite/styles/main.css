@@ -10,31 +10,36 @@ header, nav, main, table, footer { /* the comma means apply the following CSS de
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     
 }
-header {
+/*header {
     display: flex;
     padding; 2%;
-    }
+    }*/
 
-    header h1 {
+/*    header h1 {
 		flex-flow: column;
         font-size: 1.7rem;
         margin: 2%;
-        }
+        }*/
 
-    header .subheading {
+/*    header .subheading {
 		flex-flow: column;
         font-size: .7rem;
         margin: 2%;
-        }
+        }*/
 
     h2, h5 {
     margin: 2%;
     }
 
-    header figure.logo {
-        text-align: center;
+    header figure {
         margin: 2%;
+		text-align: center;
         }
+
+header figure img {
+	width: 75%;
+	max-width: 800px;
+}
 
 nav {
     margin: 0 2%;
@@ -317,9 +322,7 @@ footer {
     footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /*----------------------- FORM STUFF ---------------------------*/
-form#conference {
-    margin: 1em 3%;
-}
+
 fieldset {
     background-color: skyblue;
     border-radius: .8em;
@@ -348,6 +351,12 @@ label span {
     padding-bottom: .2em;
 }
 
+span#stormLevel {
+	display: inline-block;
+	margin: 2%;
+	padding: 0;
+	font-size: 2.5em;
+}
 span#inDanger {
     margin: .5em;
     font-size: .8em;
@@ -398,6 +407,12 @@ label input {
     background-repeat: no-repeat;
     background-position: 4px -11px;
 }
+
+#slider {
+	width: 75%;
+	max-width: 460px;
+}
+
 input[type="radio"] {
     margin: 0 0 0 .5em;
     display: inline;
