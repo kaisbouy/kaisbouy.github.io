@@ -15,9 +15,9 @@ header {
     padding; 2%;
     font-size: 14px;
     text-align: center;
-    overflow: hidden;
     }
     header h1 {
+        flex-direction: column;
         margin: 2%;
         text-align: center;
         }
@@ -27,6 +27,8 @@ header {
     }
 
     header figure.logo {
+        float: left;
+        width: 14%;
         margin: 2%;
         }
 
@@ -34,6 +36,7 @@ header {
         }
 
     header .subheading {
+        flex-direction: column;
         margin: 2%;
         }
 
