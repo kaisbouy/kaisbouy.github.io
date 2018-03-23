@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Springfield City</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="Current weather, temperature, events, and other facts about Springfield City.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+
+    </head>
+    <body>
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/hill_countrysmall.png" alt="Hill Country logo" sizes="80vw"
+                     srcset="images/hill_countrysmall.png 400w,
+                             images/hill_countrymed.png 800w,
+                             images/hill_countrylarge.png 1200w,
+                             ">
+            </figure>
+        </header>
+
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <figure class="cityPic">
+                <img src="images/springfield2_0.jpeg" alt="Springfield Lake overflowing its banks." sizes="100vw"
+                     srcset="images/springfield396.jpg 396w,
+                             images/springfield600.jpg 600w,
+                             images/springfield1200.jpg 1200w,
+                             ">
+            </figure>
+            <section class="summary">
+                
+<!--Weather Underground json is displayed here-->
+                <h3>Weather Conditions for</h3> 
+                <h1><span id="place"> City</span></h1>
+
+                <p><h1><span id="currentTemp">90</span>&deg;F</h1><span id="weather">partly cloudy</span></p>
+
+                <img id="w_icon" src="" alt="current weather icon" >
+                
+                <p> Precipitation: <span id="precip">0.10</span> in.</p>
+                <p> Humidity: <span id="humidity">50</span></p>
+                <p> Wind: <span id="windSpeed">7</span> MPH</p>
+                <p> Windchill: <span id="windChill">12</span>&deg;F</p>
+                <p> Forecast: <span id="forecast">blah blah blah</span></p>
+
+
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article class="clearfix">
+                <h3>Springfield is the place to be!</h3>	
+                    <figure class="article_photo">
+                    <img src="images/springfield1_0.jpeg" alt="Waterfoul return to a Springfield Lake." sizes="50vw"
+                     srcset="images/springfield1_197.jpg 197w,
+                             images/springfield1_300.jpg 300w,
+                             images/springfield1_600.jpg 600w,
+                             ">
+                    </figure>
+                <p class="town-article">
+
+                    Spring officially begins when the ducks return to Springfield Lake. Birds migrate long distances from wintering grounds to breeding areas and back again to the wintering grounds with visual and nonvisual cues. Visual orientation mechanisms that ducks use include the sun, polarized light, stars, and even landmarks. Birds use the axes of polarized light to determine the position of the sun and perform sun compass orientation. Navigation at night requires migrants to use stars to orient their direction. Coastlines, mountain ridges and other bodies of water such as Springfield Lake are major topographic features that may be considered landmarks. Welcome home ducks!
+                </p>
+            </article>		  
+
+        </main>
+
+        <footer>
+            <aside class="clearfix">
+                <strong>Hill Country Weather</strong><br>
+                10155 Davis Ave<br>
+                Hilldale, TX 78255<br>
+                (210) 555-5555<br>
+                weather@hillcountry.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved &nbsp; &#8226; &nbsp; Hill Country Weather &nbsp; &#8226; &nbsp; <span id="currentdate">myDate()</span></p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/springfield-weather.js"></script>
+
+    </body>
+</html>
