@@ -148,7 +148,7 @@ figcaption {
 	padding: .2em;
 }
 
-figcaption#title {
+figcaption.title {
 	font-style: italic;
 	text-align: center;
 }

@@ -16,7 +16,7 @@ weatherObject.onload = function () {
 }; // end of onload
 
 var forecastObject = new XMLHttpRequest();
-forecastObject.open('GET', 'https://api.wunderground.com/api/ea1dcb2430b970d7/forecast/q/MN/Franklin.json', true);
+forecastObject.open('GET', 'https://api.wunderground.com/api/ea1dcb2430b970d7/forecast/q/OR/Springfield.json', true);
 forecastObject.send();
 forecastObject.onload = function () {
     var weatherForecast = JSON.parse(forecastObject.responseText);

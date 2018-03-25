@@ -3,7 +3,7 @@
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
-    font-family: arial;
+    font-family: 'Oxygen', sans-serif;
     background-color: white;
 }
 header, nav, main, table, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -13,13 +13,27 @@ header, nav, main, table, footer { /* the comma means apply the following CSS de
 header {
     display: flex;
     padding; 2%;
+<<<<<<< HEAD
     font-size: 14px;
     text-align: center;
+=======
+>>>>>>> 412e33c98e6292e7cd2d1cbff1dda735233b48df
     }
+
     header h1 {
+<<<<<<< HEAD
         flex-direction: column;
+=======
+		flex-flow: column;
+        font-size: 1.7rem;
         margin: 2%;
-        text-align: center;
+        }
+
+    header .subheading {
+		flex-flow: column;
+        font-size: .7rem;
+>>>>>>> 412e33c98e6292e7cd2d1cbff1dda735233b48df
+        margin: 2%;
         }
 
     h2, h5 {
@@ -27,6 +41,7 @@ header {
     }
 
     header figure.logo {
+<<<<<<< HEAD
         float: left;
         width: 14%;
         margin: 2%;
@@ -37,6 +52,9 @@ header {
 
     header .subheading {
         flex-direction: column;
+=======
+        text-align: center;
+>>>>>>> 412e33c98e6292e7cd2d1cbff1dda735233b48df
         margin: 2%;
         }
 
@@ -64,6 +82,7 @@ nav ul {
 nav button {
     margin: 0;
     padding: 5px;
+	text-align: left;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
     background: #005c97; /* Old browsers */
     background: -moz-linear-gradient(top, #005c97 1%, #68cef3 100%); /* FF3.6-15 */
@@ -75,23 +94,26 @@ nav button {
     color: darkblue;
 }
 nav ul li {
-    display: flex;
+    display: block;
     font-size: .8em;
     color: black;
+	border-top: 1px solid rgba(0,0,0,0.3)
+
 }
 nav ul li a {
+	display: block;
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
-    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
 }
 nav ul li.active a {
     background-color: rgba(0,0,0,0.2);
     color: #fff;
 }
-nav ul li a:hover {
-    background-color: rgba(0,0,0,0.4);
-}
+
 nav ul.hide {display: none;}
 
 nav img {}
@@ -127,6 +149,7 @@ div#city{
 
 main article {
     display: block;
+	overflow: auto;
 }
 
 /* Gallery grid container*/
@@ -256,8 +279,14 @@ article {
     flex-direction: row;
     margin: 2%;
 }
-article figure.article_photo {
-    float: right;
+article figure.article_photo{
+	float: right;
+	width: 66%;
+	margin: 0 2% 2% 2%;
+}
+article figure.article_photo img{
+	width: 100%;
+	padding: 0;
 }
 footer {
     margin: 0 2%;
@@ -408,11 +437,8 @@ input:required:valid {
 @media only screen and (max-width: 600px) {
     .forecast {
         display: none;
-        
     }
     
-    .article_photo {  
-        width: 98%;
         /* fill the page in the small/phone view */
     }
 }
