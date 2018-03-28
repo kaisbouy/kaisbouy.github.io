@@ -29,6 +29,10 @@
 		grid-row-gap: 1em;
 		grid-column-gap: 1em;
     }
+    
+    main figure:hover {
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, .33);
+    }
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
