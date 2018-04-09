@@ -10,11 +10,12 @@ header, nav, main, table, footer { /* the comma means apply the following CSS de
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 header {
-    padding; 2%;
+    padding: 2%;
     font-size: 14px;
     text-align: center;
     overflow: hidden;
     }
+
     header h1 {
         margin: 2%;
         position: relative;
