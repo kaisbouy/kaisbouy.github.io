@@ -1,0 +1,261 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+* { box-sizing: border-box; border: 0px dashed red; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+h1 {font-size: 30px; color: #be4926; text-align: center;}
+h2 {font-size: 25px; color: #be4926;}
+h3 {font-size: 20px; color: #be4926;}
+p {font-size: 16px; color: #000000;}
+
+body {
+    /* Declare the base font-family - from google font api or other */
+    font-family: 'Cabin', sans-serif;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbee01+0,ffffff+100 */
+        background: #fbee01; /* Old browsers */
+    background: -moz-linear-gradient(top, #fbee01 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fbee01 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fbee01 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbee01', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;
+    background-repeat: repeat-x;
+
+}
+
+
+header figure {
+    margin: 2%;
+    text-align: center;
+}
+
+header figure img {
+	width: 75%;
+	max-width: 416px;
+}
+
+nav {
+    margin: 0 2%;
+    font-family: Cabin, sans-serif;
+    font-size: 1.6em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f8942e+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f8942e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f8942e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f8942e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8942e',GradientType=0 ); /* IE6-9 */
+}
+nav button {
+    margin: 0;
+    padding: 5px;
+	text-align: left;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f8942e+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f8942e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f8942e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f8942e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8942e',GradientType=0 ); /* IE6-9 */
+    border: none;
+    font-size: 1.6rem;
+    color: #be4926;
+}
+nav ul li {
+    display: block;
+    font-size: .8em;
+    color: #be4926;
+	border-top: 1px solid rgba(183,72,45,0.3)
+}
+nav ul li a {
+	display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #be4926;
+}
+nav ul li a:hover {
+    background-color: #fbee01;
+}
+nav ul li.active a {
+    background-color: #be4926;
+    color: #ffffff;
+}
+
+nav ul.hide {display: none;}
+
+/*--- nav bar ---*/
+.container {
+    display: grid;
+    margin: 0 2%;
+    grid-template-columns: 100%;
+}
+
+.container {
+    border: 2px solid #be4926;
+    border-radius: 5px;
+    background-color: #fff4e6;
+}
+
+.container > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #be4926;
+}
+
+main {
+    margin: 0 2%;
+}
+
+main figure.frame {
+    float: right;
+    margin: 0 2% 15% 2%;
+    border: solid #be4926;
+    box-shadow: 7px 7px 20px #000000;
+    background-color: none;
+}
+main figure.frame img {
+    width: 100%;
+}
+
+/*--- json display area ---*/
+main article {
+    display: block;
+}
+
+section.summary p {
+	margin: 8px 2%;
+}
+
+section.summary {
+    text-align: center;
+}
+
+/*----------------------- FORM STUFF ---------------------------*/
+
+fieldset {
+    background-color: #f8942e;
+    border-radius: .8em;
+    margin: 5% 5% 0 0;
+    border: #be4926 solid 1px;
+    max-width: 640px;
+}
+legend {
+    color: #ffffff;
+    margin-left: 6%;
+    padding: .5em;
+    border: #be4926 solid 1px;
+    background-color: #be4926;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label input {
+    height: 27px;
+    border: #be4926 solid 1px;
+    border-radius: 4px;
+    padding: .2em;
+    min-width: 75%;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: #be4926;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+textarea {
+    margin: .1em;
+    width: 99%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: #be4926 solid 1px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /*remove the apple mobile default styling*/
+    color: black;
+    border: dashed 7px #000000;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 2%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: .6em;
+    background: #ff0000; /* Old browsers */
+    box-shadow: 5px 5px 5px #666;
+}
+
+input.submitBtn:hover {
+    background: #fbee01;
+    box-shadow: 10px 10px 10px #666;
+}
+
+#events {
+    display: flex;
+}
+
+#events > div {
+    flex-direction: column;
+}
+/*--- End of Form ---*/
+
+iframe {
+    margin: 2% 0;
+    width: 350px;
+    height: 300px;
+    border: solid 3px #be4926;
+    border-radius: .8em;
+    box-shadow: 10px 10px 30px;
+}
+
+footer {
+    width: 96%;
+    bottom: 0;
+    margin: 2% 2% 0 2%;
+    text-align: center;
+}
+footer aside {
+    background-color: #f8942e;
+    padding: 5px;
+    font-size: .8em;
+    color: #be4926;
+}
+footer .footer-bar {
+    padding: 5px;
+    background-color: #f8942e;
+    color: #000000;
+    font-size: .7em;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Other Class Selectors */
+@media only screen and (max-width: 600px) {
+    .forecast {
+        display: none;
+    }
+    
+        /* fill the page in the small/phone view */
+    }
+}

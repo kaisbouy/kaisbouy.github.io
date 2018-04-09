@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Congratulations!</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="The Mountain Spoke is a fictitious, retail store and shop located in Bozeman, Montana specializing in bicycles, bicycle parts, bicycle repair, and tours.">
+
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+        <!-- external style references in the proper cascading order -->    
+        <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet"><!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views -->
+    </head>
+
+    <body class="clearfix">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo.png" alt="The Mountain Spoke logo" sizes="80vw"
+                     srcset="images/logo208.png 208w,
+                             images/logo312.png 312w,
+                             images/logo416.png 416w,
+                             ">
+            </figure>
+        </header>
+
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Congratulations!</h1>
+            <h2>You are now registered for Cycle the Continental Divide.</h2>
+            <h3>Your official race placard will be mailed in early June along with helpful resources to get you prepared for this epic adventure.</h3>
+            <h1>We look forward to seeing you on the mountain.</h1>
+        </main>
+
+        <footer class="clearfix">
+            <aside class="clearfix">
+                3950 Valley Commons Drive&nbsp; &#124; &nbsp;Bozeman, MT 59718<br>
+                (406) 867-5309&nbsp; &#124; &nbsp;info@themountainspoke.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp; &#8226; &nbsp; The Mountain Spoke<br><span id="currentdate">myDate()</span> &nbsp; &#8226; &nbsp; <a href="data/resources.html">Resources</a></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

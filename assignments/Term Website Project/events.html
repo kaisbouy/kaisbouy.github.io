@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Joe Hayes">
+        <meta name="description" content="The Mountain Spoke is a fictitious, retail store and shop located in Bozeman, Montana specializing in bicycles, bicycle parts, bicycle repair, and tours.">
+
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+        <!-- external style references in the proper cascading order -->    
+        <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet"><!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views -->
+    </head>
+
+    <body class="clearfix">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo.png" alt="The Mountain Spoke logo" sizes="80vw"
+                     srcset="images/logo208.png 208w,
+                             images/logo312.png 312w,
+                             images/logo416.png 416w,
+                             ">
+            </figure>
+        </header>
+
+        <nav class="container">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li class="active"><a href="events.html">Events</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <h1>Cycle the Continental Divide</h1>
+            <h3>Presented by The Mountain Spoke, Cycle the Continental Divide is the only race of its kind. Comprised of some of the most exciting sections of remote trail in the Rocky Mountains, Cycle the Continental Divide is a challenging course that takes riders over ridgelines, past alpine lakes and down flowing drainages while exploring hundres of miles of remote connected trails.</h3>
+            
+      
+         <!--Registration Form for Cycle the Continental Divide-->   
+        <span id="events">
+            <div class="form">
+                <form action="congratulations.html">
+
+                    <fieldset>
+                        <legend><span>Contact Information (&ast;required)</span></legend>
+
+                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required title="Provide your full name"></label>
+
+                        <label><span>Email:</span><input name="email" type="email" value="" placeholder="your_name@gmail.com" required title="Provide a valid email address"></label>
+
+                        <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="(801) 867-5309" pattern="[0-9()- ]{10,20}"required title="Provide a valid phone number"></label>
+
+                        <label><span>Date of Birth: ##-##-####</span><input name="DOB" type="dob" value="" placeholder="10/25/2000" pattern="[0-9 / -]{10,10}"required title="Provide your date of birth"></label>
+                        
+                        <label><span>Home State/Country</span><input name="origin" type="text" value="" placeholder="" pattern="[a-zA-Z -._]{2,99}"required title="Provide your home state or country"></label>
+
+                        <label><span>Special Accommodations/Comments:</span><textarea placeholder="Additional information or comments..."></textarea></label>
+                    </fieldset>
+                    
+                    <input type="submit" value="Register" class="submitBtn">
+                    <input name="redirect" type="hidden" value="thanks.html">
+                    
+                </form>
+            </div>
+
+            
+            <div>
+                <figure class="frame">
+                    <img src="images/Great_Divide_Mountain_Bike_Route_default.jpg" alt="Map of the Continental Divide biking trail from Roosville, Montana to Polaris, Montana." sizes="40vw"
+                         srcset="images/Great_Divide_Mountain_Bike_Route_small.jpg 300w,
+                                 images/Great_Divide_Mountain_Bike_Route_medium.jpg 400w,
+                                 images/Great_Divide_Mountain_Bike_Route_large.jpg 600w,
+                                 ">
+                </figure>
+            </div>
+        </span>
+            
+            
+        </main>
+
+        <footer>
+            <aside>
+                3950 Valley Commons Drive&nbsp; &#124; &nbsp;Bozeman, MT 59718<br>
+                (406) 867-5309&nbsp; &#124; &nbsp;info@themountainspoke.com<br>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp; &#8226; &nbsp; The Mountain Spoke<br><span id="currentdate">myDate()</span> &nbsp; &#8226; &nbsp; <a href="data/resources.html">Resources</a></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
