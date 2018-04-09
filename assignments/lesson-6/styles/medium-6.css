@@ -12,6 +12,7 @@
     }
     
     nav ul li {
+        font-size: .8em;
         float: left;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005c97+1,68cef3+100 */
         background: #005c97; /* Old browsers */
