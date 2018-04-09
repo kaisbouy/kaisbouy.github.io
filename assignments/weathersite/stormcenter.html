@@ -21,7 +21,7 @@
                 <img src="images/hill_countrysmall.png" alt="Hill Country logo" sizes="80vw"
                      srcset="images/hill_countrysmall.png 400w,
                              images/hill_countrymed.png 800w,
-                             images/hill_countrylarge.png 1200w,
+                             images/hill_countrylarge.png 1200w
                              ">
             </figure>
         </header>
@@ -53,9 +53,9 @@
 							
                             <label><span>Email:</span><input name="email" type="email" value="" placeholder="your_name@gmail.com" required title="Provide a valid email address"></label>
 							
-                            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="(801) 867-5309" pattern="[0-9()- ]{10,20}"required title="Provide a valid phone number"></label>
+                            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="(801) 867-5309" pattern="[0-9()-]{10,20}" required title="Provide a valid phone number"></label>
 							
-                            <label><span>Zip Code:</span><input name="zip" type="number" value="" placeholder="83424" pattern="[0-9]{5,10}"required title="Provide your zip code"></label>
+                            <label><span>Zip Code:</span><input name="zip" type="number" value="" placeholder="83424" required title="Provide your zip code"></label>
                         </fieldset>
 
 
@@ -73,9 +73,9 @@
                                         <option value="Tornado"></option>
                                     </datalist>
                                 </label>
-                            <label for="severity"><span>Storm Severity (1 to 10)</span>
-                            <input id="slider" name="howBad" type="range" value="5" min="1" max="10" step="1" oninput="threatLevel(this.value)" onchange="threatLevel(this.value)">
-                            <span id="stormLevel">7</span>
+                            <label for="stormLevel"><span>Storm Severity (1 to 10)</span>
+                                <input for="stormLevel" id="slider" name="howBad" type="range" value="5" min="1" max="10" step="1" oninput="threatLevel(this.value)" onchange="threatLevel(this.value)">
+                                <span id="stormLevel">7</span>
                             </label>
                             <label for="regions"><span>Storm Region:</span></label>
 
