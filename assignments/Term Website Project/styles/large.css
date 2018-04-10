@@ -30,7 +30,16 @@
 		grid-column-gap: 1em;
     }
     
-
+    .tours_container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    #tours {
+        width: 750px;
+        height: 500px;
+    }
+    
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

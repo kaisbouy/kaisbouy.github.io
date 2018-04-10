@@ -2,7 +2,7 @@
 * { box-sizing: border-box; border: 0px dashed red; margin: 0; padding: 0;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 h1 {font-size: 30px; color: #be4926; text-align: center;}
-h2 {font-size: 25px; color: #be4926;}
+h2 {font-size: 25px; color: #be4926; text-align: center;}
 h3 {font-size: 20px; color: #be4926;}
 p {font-size: 16px; color: #000000;}
 
@@ -109,8 +109,16 @@ main {
     margin: 0 2%;
 }
 
+/*#events {
+    display: flex;
+}
+
+#events > div {
+    flex-direction: column;
+}*/
+
 main figure.frame {
-    float: right;
+    flex-direction: column;
     margin: 0 2% 15% 2%;
     border: solid #be4926;
     box-shadow: 7px 7px 20px #000000;
@@ -125,12 +133,77 @@ main article {
     display: block;
 }
 
+main ol {
+    font-size: 1.2em;
+    margin-left: 10%;
+    list-style-position: ins;
+}
+
+main ul > li {
+    margin: 2% 10%;
+    padding: 0;
+    list-style-image: url(../images/wheel.png);
+    list-style-position: outside;
+}
+
+#prize {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ff0000;
+    text-align: center;
+}
+
+#race_details {
+    display: flex;
+    margin: 20px 2%;
+}
+
 section.summary p {
 	margin: 8px 2%;
 }
 
 section.summary {
     text-align: center;
+}
+
+.tours_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tours {
+    margin: 2% 0;
+    padding: 2%;
+    width: 350px;
+    height: 300px;
+    border: solid 3px #be4926;
+    border-radius: .8em;
+    box-shadow: 10px 10px 30px;
+}
+
+#tours img {
+    width: 100%;
+}
+
+.button {
+    background-color: #ff0000;
+    border: none;
+    border-radius: .8em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 4px 2px;
+    box-shadow: 5px 5px 10px #000000;
+    cursor: grabbing;
+}
+
+.button:hover {
+    background-color: #fbee01;
+    color: #000000;
 }
 
 /*----------------------- FORM STUFF ---------------------------*/
@@ -141,6 +214,7 @@ fieldset {
     margin: 5% 5% 0 0;
     border: #be4926 solid 1px;
     max-width: 640px;
+    min-width: 380px;
 }
 legend {
     color: #ffffff;
@@ -205,13 +279,7 @@ input.submitBtn:hover {
     box-shadow: 10px 10px 10px #666;
 }
 
-#events {
-    display: flex;
-}
 
-#events > div {
-    flex-direction: column;
-}
 /*--- End of Form ---*/
 
 iframe {

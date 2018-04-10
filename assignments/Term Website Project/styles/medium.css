@@ -61,6 +61,13 @@
 		margin-top: 2%;
 	}  /* show the 10-day forecast with the medium view and up */
     
+    #tours {
+        margin: 2%;
+        width: 700px;
+        height: 500px;
+    }
+    
+
 	/*Gallery Page*/
     .gallery {
         display: grid;
