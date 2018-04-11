@@ -15,6 +15,16 @@
         <link href="styles/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
         <link href="styles/medium.css" rel="stylesheet"><!-- medium/tablet views -->
         <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("ul.bikeSpecs").slideToggle();
+                });
+            });
+        </script>
+        
     </head>
 
     <body class="clearfix">
@@ -42,11 +52,81 @@
 
         <main>
             <h1>Products</h1>
-            <h2>test</h2>
-            <h3>test</h3>
-            <p>test</p>
-            <div>test</div>
-            <span>test</span>            
+            <h2>The Mountain Spoke is proud to offer 3 of the industries top-ranked mountain bikes in the world.</h2>
+
+            <div>
+            
+                <ul class="bikeBrand">
+                    <li>
+                        <img src="images/logo_specialized.png"><br>
+                        <p>
+                            <ul class="bikeSpecs">
+                                <h2>2017<br>StumpJumper<br>FSR Expert</h2>
+                                <img src="images/testBike.jpg"><br>
+                                <h3>Price: $5,000.00</h3>
+                                <li>Sizes: MD/LG/XL</li>
+                                <li>Colors: black, silver, red</li>
+                                <li>Dimensions: 84in x 39in</li>
+                                <li>Weight: 7.8 lbs - 10.2 lbs</li>
+                            </ul>
+                        </p>
+                        <button id="showHide">Show/Hide Details</button>
+
+                    </li>
+                    <li>
+                        <img src="images/logo_giant.png"><br>
+                        <p>
+                        <ul class="bikeSpecs">
+                            <h2>2018<br>Anthem<br>Advanced Pro</h2>
+                            <img src="images/bike_giant1.jpg"><br>
+                            <h3>Price: $8,670</h3>
+                            <li>Sizes: 19"-32"</li>
+                            <li>Colors: black, silver, red, gold</li>
+                            <li>Dimensions: 84in x 39in</li>
+                            <li>Weight: 7.8 lbs - 10.2 lbs</li>
+                        </ul>
+                        </p>
+                        <button id="showHide">Show/Hide Details</button>
+                    </li>
+                    <li>
+                        <img src="images/logo_cannondale.png"><br>
+                        <p>
+                        <ul class="bikeSpecs">
+                            <h2>2018<br>Scalpel SI</h2>
+                            <img src="images/bike_cannondale1.jpg"><br>
+                            <h3>Price: $ 12,694.17</h3>
+                            <li>Sizes: 19"-32"</li>
+                            <li>Colors: black</li>
+                            <li>Dimensions: 84in x 39in</li>
+                            <li>Weight: 7.8 lbs - 10.2 lbs</li>
+                        </ul>
+                        </p>
+                        <button id="showHide">Show/Hide Details</button>
+                    </li>
+                </ul>
+                
+                <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+                <script>
+                    $(function(){
+                        // All jQuery code goes here
+                        $('.bikeBrand > li').hover(function(){
+                            //This code executes when the mouse pointer is over the list item
+
+                            $(this).addClass('openSesame');
+
+                        }, function(){
+                            // this code executes when the mouse pointer leaves the list item
+
+                            $(this).removeClass('openSesame');
+
+                        });
+
+                    })
+                </script>
+
+
+            </div>
+
             
             
         </main>

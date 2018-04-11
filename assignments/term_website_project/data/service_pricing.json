@@ -1,0 +1,397 @@
+{       
+    "tune_ups": [
+        {
+        "service":"Basic Tune Package",
+        "price": 75
+        },
+        {
+        "service":"Deluxe Tune Package",	
+        "price": 110
+        },
+        {
+        "service":"Complete Road Bike Overhaul",
+        "price": 199
+        },
+        {
+        "service":"Complete MTB Overhaul",	
+        "price": 249
+        },
+        {
+        "service":"Complete MTB Overhaul w/ Suspension",
+        "price": 350
+        },
+        {
+        "service":"Frame Swap (Warranty)",
+        "price": 150
+        },
+        {
+        "service":"Full Frame Swap (Non-Warranty)",	
+        "price": 300
+        },
+        {
+        "service":"Assembled Geared Bike",	
+        "price": 70
+        },
+        {
+        "service":"Complete Bike Build (Bare Frame)",	
+        "price": 300
+        },
+        {
+        "service":"Box Bike for Shipping",	
+        "price": 60
+        },
+        {
+        "service":"Insurance Estimate for Labor & Parts",	
+        "price": 20
+        }
+    ],
+
+    "installation": [
+        {
+        "service":"Install Basket",
+        "price": 15
+        },
+        {
+        "service":"Install Fender (Bolt-On)",	
+        "price": 30
+        },
+        {
+        "service":"Install Fender (Clip-On)",	
+        "price": 10
+        },
+        {
+        "service":"Install Computer w/o Cadence",	
+        "price": 15
+        },
+        {
+        "service":"Install Computer w/ Cadence",	
+        "price": 25
+        },
+        {
+        "service":"Install Front Rack",	
+        "price": 20
+        },
+        {
+        "service":"Install Rear Rack",	
+        "price": 20
+        },
+        {
+        "service":"Install Kick Stand",	
+        "price": 5
+        },
+        {
+        "service":"Install Training Wheels",	
+        "price": 10
+        },
+        {
+        "service":"Install Saddle",	
+        "price": 6
+        },
+        {
+        "service":"Install Pedals",	
+        "price": 5
+        }
+    ],
+
+    "repairs": [
+        {
+        "service":"Cut Threadless Fork",
+        "price": 15
+        },
+        {
+        "service":"Install Rigid Fork",	
+        "price": 40
+        },
+        {
+        "service":"Install Suspension Fork",	
+        "price": 40
+        },
+        {
+        "service":"Straighten & Align Fork Dropouts",	
+        "price": 25
+        },
+        {
+        "service":"Install Handlebar",	
+        "price": 20
+        },
+        {
+        "service":"Install Stem",	
+        "price": 10
+        },
+        {
+        "service":"Install BMX Bar or Stem",
+        "price": 15
+        },
+        {
+        "service":"Tape Drop Bars",
+        "price": 20
+        },
+        {
+        "service":"Tape Aero Bars",
+        "price": 20
+        },
+        {
+            "service":"Install Grips on Flat Bar",	
+        "price": 4
+        },
+        {
+            "service":"Install Bar-Ends",	
+        "price": 10
+        },
+        {
+            "service":"Adjust Threaded",	
+        "price": 6
+        },
+        {
+            "service":"Adjust Threadless Headset",	
+        "price": 6
+        },
+        {
+            "service":"Install Headset Cups on Bare Frame",	
+        "price": 15
+        },
+        {
+        "service":"Install Headset on Complete Bike",
+        "price": 35
+        },
+        {
+        "service":"Overhaul Headset",
+        "price": 35
+        }
+    ],
+    
+    "brakes": [
+        {
+        "service":"Adjust Brake (Per Brake)",	
+        "price": 10
+        },
+        {
+        "service":"Install Brake Cable (Per Brake)",	
+        "price": 15
+        },
+        {
+        "service":"Replace Non-Hydraulic Brake Pads (Per Brake)",	
+        "price": 5
+        },
+        {
+        "service":"Replace Hydraulic Brake Pads (Per Brake)",	
+        "price": 20
+        },
+        {
+        "service":"Install Brakeset (Per Brake)",	
+        "price": 25
+        },
+        {
+        "service":"Bleed Hydraulic Disc Brake (Per Brake)",	
+        "price": 40
+        },
+        {
+        "service":"Install & Bleed Hydraulic Brake (Per Brake)",
+        "price": 45
+        },
+        {
+        "service":"Install Rapidfire / Gripshift (Per Shifter)",
+        "price": 15
+        },
+        {
+        "service":"Install STI Shifter - Taping & Adjustment (Per Brake)",	
+        "price": 25
+        },
+        {
+        "service":"Adjust Front Derailleur",	
+        "price": 15
+        },
+        {
+        "service":"Adjust Rear Derailleur",	
+        "price": 15
+        },
+        {
+        "service":"Install Derailleur (Front or Rear)",	
+        "price": 20
+        },
+        {
+        "service":"Replace Derailleur Cable & Housing - Front or Rear (Parts not Included)",	
+        "price": 20
+        },
+        {
+        "service":"Straighten Derailleur Hanger",	
+        "price": 8
+        }
+    ],
+
+    "drivetrain": [
+        {
+        "service":"Adjust 1 Piece Bottom Bracket",	
+        "price": 15
+        },
+        {
+        "service":"Adjust 3 Piece Bottom Bracket",	
+        "price": 15
+        },
+        {
+        "service":"Install 1 or 3 Piece Bottom Bracket",	
+        "price": 25
+        },
+        {
+        "service":"Install New 3 Piece Crank & Bottom Bracket",	
+        "price": 30
+        },
+        {
+        "service":"Install New Cartridge Bottom Bracket",	
+        "price": 25
+        },
+        {
+        "service":"Overhaul 1 or 3 Piece Bottom Bracket",	
+        "price": 30
+        },
+        {
+        "service":"Overhaul Press-In Bottom Bracket",
+        "price": 30
+        },
+        {
+        "service":"Install Press-In Bottom Bracket",
+        "price": 30
+        },
+        {
+        "service":"Install New Chain",	
+        "price": 10
+        },
+        {
+        "service":"Lubricate Chain",
+        "price": 4
+        },
+        {
+        "service":"Size Chain",	
+        "price": 3
+        },
+        {
+        "service":"Helicoil Crank Arm",	
+        "price": 35
+        },
+        {
+        "service":"Install Crank Arm",	
+        "price": 10
+        },
+        {
+        "service":"Remove Crank & Bottom Bracket",	
+        "price": 15},
+        {
+        "service":"Tap Threads in Crank",
+        "price": 10
+        },
+        {
+        "service":"Install Chainrings",
+        "price": 10
+        }
+    ],
+
+    "wheel": [
+        {
+        "service":"Light Wheel True",	
+        "price": 10
+        },
+        {
+        "service":"Standard Wheel True",	
+        "price": 16
+        },
+        {
+        "service":"Major Wheel True",	
+        "price": 20
+        },
+        {
+        "service":"Spoke Replacement (+ $2 Spoke)",	
+        "price": 25
+        },
+        {
+        "service":"Wheel Build",	
+        "price": 60
+        },
+        {
+        "service":"Install Tube",	
+        "price": 10
+        },
+        {
+        "service":"Install Slime (Sealant) to Tube",
+        "price": 6
+        },
+        {
+        "service":"Install Tire Liner",
+        "price": 10
+        },
+        {
+        "service":"Install Tubeless Tire",
+        "price": 15
+        },
+        {
+        "service":"Tubeless Conversion (Labor & Sealant)",	
+        "price": 40
+        },
+        {
+        "service":"Mount Sew-Up w/ Glue",	
+        "price": 50
+        },
+        {
+        "service":"Add Tubeless Sealant",	
+        "price": 8
+        },
+        {
+        "service":"Hub Cone Adjustment (Per Wheel)",	
+        "price": 10
+        },
+        {
+        "service":"Hub Overhaul (3 Speed)",	
+        "price": 60
+        },
+        {
+        "service":"Hub Overhaul (Coaster Brake)",	
+        "price": 40
+        },
+        {
+        "service":"Hub Overhaul - Front",
+        "price": 25
+        },
+        {
+        "service":"Hub Overhaul - Rear",
+        "price": 40
+        },
+        {
+        "service":"Install / Remove Cassette or Freewheel",
+        "price": 6
+        }
+    ],
+
+    "misc": [
+        {
+        "service":"Straighten & Align Rear Dropouts",	
+        "price": 25
+        },
+        {
+        "service":"Face BB Shell",	
+        "price": 40
+        },
+        {
+        "service":"Ream Seat Tube",	
+        "price": 15
+        },
+        {
+        "service":"Install New Frame Saver - Bare Frame",	
+        "price": 30
+        },
+        {
+        "service":"Rear Shock Rebuild",	
+        "price": 40
+        },
+        {
+        "service":"Overhaul Rear Suspension Linkage",	
+        "price": 60
+        },
+        {
+        "service":"Fork Oil Replacement",	
+        "price": 40
+        },
+        {
+        "service":"Fork Overhaul",	
+        "price": 60
+        }
+    ]
+}
