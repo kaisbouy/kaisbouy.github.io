@@ -1,25 +1,27 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
     header h1 {
         font-size: 3em;
     }
+    
     h2 {
         font-size: 2em;
     }
     h5 {
         font-size: 1.2em
     }
-        header figure.logo {
+    header figure.logo {
         text-align: center;
         max-height: 222px;
-        }
-    
-        header .subheading {
+    }
+
+    header .subheading {
         font-size: 2.5rem;
         margin: 2%;
-        }
+    }
 
-    
+
     nav {
         background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f8942e+100 */
             background: #ffffff; /* Old browsers */
@@ -27,23 +29,23 @@
         background: -webkit-linear-gradient(top, #ffffff 0%,#f8942e 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, #ffffff 0%,#f8942e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8942e',GradientType=0 ); /* IE6-9 */;
-        
+
     }
-    
+
     nav button {display: none;}  /* hamburger button does not need to be shown */
-    
+
     nav ul.hide {display: block;}
-    
+
     nav ul {
         margin-left: 2%;
         margin-bottom: 0;
         display: inline-flex;
         flex-wrap: nowrap;
         }
-    
+
     nav ul li {
         float: left;
-        font-size: .7em;
+        font-size: .69em;
         }
 
     nav ul li a {
@@ -57,29 +59,67 @@
     }
 
     section.forecast {
-		display: block;
-		margin-top: 2%;
-	}  /* show the 10-day forecast with the medium view and up */
-    
+        display: block;
+        margin-top: 2%;
+    }  /* show the 10-day forecast with the medium view and up */
+
     #tours {
         margin: 2%;
         width: 700px;
         height: 500px;
     }
-    
 
-	/*Gallery Page*/
+
+    /*Gallery Page*/
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
-		grid-row-gap: 1em;
-		grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
     }
-  
+
     article p{
         word-wrap: normal;
     }
 
+    #events {
+        flex-flow: nowrap;
+    }
+    
+    .events_container {
+        flex-direction: row;
+        justify-content: center;
+        margin: 2%;
+        width: 30vw;
+        max-width: 500px;
+        border: solid 3px #be4926;
+        border-radius: .8em;
+        background-color: #f8942e;
+    }
+    
+    form {
+        width: 450px;
+    }
+    
+    fieldset {
+        width: 100%;
+    }
+    
+    .events_map {
+        width: 44vw;
+        margin-top: 1.4em;
+        margin-left: 2%;
+        max-height: 576px;
+    }
+    
+    .events_map img {
+        max-height: 565px;    
+    }
+    
+
+
+
+    
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

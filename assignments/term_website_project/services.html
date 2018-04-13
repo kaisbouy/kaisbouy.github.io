@@ -42,116 +42,78 @@
 
         <main>
             <h1>Services</h1>
-            <h2>test</h2>
-            <h3>test</h3>
-            <p>test</p>
-            <div>test</div>
-            <span>test</span>            
-            
-            
-            
-            
-            
-            
-            
             
 
             <section>
                 <table>
-                    <thead><h2>tuneups and assembly</h2></thead>
+                    <thead><h2>tuneups</h2></thead>
                     <tbody>
                         <tr>
-                            <td>tuneup</td>
+                            <th>basic</th>
                             <td>$75</td>
                         </tr>
                         <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                    </tbody><br>
-                    <tbody>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <td>tuneup</td>
-                            <td>$75</td>
+                            <th>deluxe</th>
+                            <td>$275</td>
                         </tr>
                     </tbody>
                 
                 </table>
 
-                
-                
-                
-                
-                
-                
-                
             </section>
 
             <script>
-                var section = document.querySelector('section');
+                
+                var thead = document.querySelector('thead');
+                var table = document.querySelector('table');
+
                 var requestURL = 'https://github.com/kaisbouy/kaisbouy.github.io/blob/master/assignments/term_website_project/data/service_pricing.json';
                 var request = new XMLHttpRequest();
                 request.open('GET', requestURL);
                 request.responseType = 'json';
                 request.send();
                 request.onload = function() {
-                    var superHeroes = request.response;
-                    populateHeader(superHeroes);
-                    showHeroes(superHeroes);
+                    var priceList = request.response;
+                    populateThead(priceList);/*--- Price List Functions*/
+                    showPrices(priceList);/*------- Price List Functions*/
                 }
 
-                function showHeroes(jsonObj) {
-                    var heroes = jsonObj['members'];
-                    for(var i = 0; i < heroes.length; i++) {
+                function populateThead(jsonObj) {
+                    var myH2 = document.createElement('h2')
+                    myH2.textContent = jsonObj['data'];
+                    thead.appendChild(myH2);
+                    
+                    var myTable = document.createElement(tbody);
+                    myPara.textContent = ''
+                    
+                    
+                    
+                    var work = jsonObj['services'];
+                    
+                    for(var i = 0; i < work.length; i++) {
+                        
+/*
                         var myArticle = document.createElement('article');
-                        var myH2 = document.createElement('h2');
-                        var myPara1 = document.createElement('p');
-                        var myPara2 = document.createElement('p');
-                        var myPara3 = document.createElement('p');
-                        var myList = document.createElement('ul');
-                        myH2.textContent = heroes[i].name;
-                        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-                        myPara2.textContent = 'Age: ' + heroes[i].age;
-                        myPara3.textContent = 'Superpowers:';
-                        var superPowers = heroes[i].powers;
+*/
+                        var myH2 = document.getElementById('h2');
+                        var myTableHead = document.getElementById('th');
+                        var myTableData = document.getElementById('td');
+                        
+                        myH2.textContent = work[i].services;
+                        myTableHead.textContent = work[i].service;
+                        myTableData.textContent = '$' + work[i].price;
+                        
+                        var superPowers = work[i].powers;
+                        
                         for(var j = 0; j < superPowers.length; j++) {
                             var listItem = document.createElement('li');
                             listItem.textContent = superPowers[j];
                             myList.appendChild(listItem);
                         }
                         myArticle.appendChild(myH2);
-                        myArticle.appendChild(myPara1);
-                        myArticle.appendChild(myPara2);
-                        myArticle.appendChild(myPara3);
-                        myArticle.appendChild(myList);
+                        myArticle.appendChild(myTableHead);
+                        myArticle.appendChild(myTableData);
+
                         section.appendChild(myArticle);
                     }
                 }
