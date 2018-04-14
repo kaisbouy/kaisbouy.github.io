@@ -40,6 +40,18 @@
         height: 500px;
     }
     
+    #serviceTable{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    table.gridtable {
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    
+    
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

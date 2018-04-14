@@ -7,6 +7,8 @@ h3 {font-size: 20px; color: #be4926; text-align: center;}
 p {font-size: 16px; color: #000000; text-align: center;}
 
 body {
+    background-image: url('/images/background_img_1.jpg');
+    
     /* Declare the base font-family - from google font api or other */
     font-family: 'Cabin', sans-serif;
     background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbee01+0,ffffff+100 */
@@ -124,6 +126,20 @@ main {
     box-shadow: none;
 }
 
+.home_container a:nth-child(2) div#home{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.home_container a:nth-child(2) div#home:hover{
+    color: #000000;
+}
+
+.home_container a:nth-child(2) div#home h2{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
 #home {
     margin: 2%;
     padding: 2%;
@@ -132,10 +148,13 @@ main {
     border: solid 3px #be4926;
     border-radius: .8em;
     background-color: #f8942e;
+    text-align: center;
+
 }
 
 #home:hover {
     box-shadow: 10px 10px 30px;
+    color: #000000;
 }
 
 #home img {
@@ -464,27 +483,36 @@ li.openSesame {
 /*---end of Bike Menu---*/
 
 /*---------------  Table of Services  -------------------*/
-
-section thead {
-    text-align: center;
+#serviceTable{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 }
 
-section table {
-    display: flex;
-    width: 92vw;
-    border: 5px solid orange;
+table.gridtable {
+    margin: 2%;
+    font-family: cabin,sans-serif;
+    font-size: 14px;
+    color:#000000;
+    border-width: 1px;
+    border-color: #be4926;
     border-collapse: collapse;
 }
-
-section td {
-    width: 46vw;
-    max-width: 600px;
-    border: 2px solid blue;
-    text-align: center;
+table.gridtable th {
+    color: #be4926;
+    font-size: 18px;
+    border-width: 3px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #be4926;
+    background-color: #f8942e;
 }
-
-section tr {
-    height: 30px;
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #be4926;
+    background-color: #ffffff;
 }
 
 

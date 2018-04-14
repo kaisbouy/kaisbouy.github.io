@@ -43,90 +43,249 @@
         <main>
             <h1>Services</h1>
             
+            <div id="serviceTable">
 
-            <section>
-                <table>
-                    <thead><h2>tuneups</h2></thead>
-                    <tbody>
-                        <tr>
-                            <th>basic</th>
-                            <td>$75</td>
-                        </tr>
-                        <tr>
-                            <th>deluxe</th>
-                            <td>$275</td>
-                        </tr>
-                    </tbody>
-                
-                </table>
+            <table class="gridtable">
+                <thead>
+                    <tr>
+                        <th colspan="2">Tune-ups</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Basic Tune Package</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Tune Package</td>
+                        <td>$110</td>
+                    </tr>
+                    <tr>
+                        <td>Complete Road Bike Overhaul</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td>Complete MTB Overhaul</td>
+                        <td>$249</td>
+                    </tr>
+                    <tr>
+                        <td>Complete MTB Overhaul w/ Suspension</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td>Frame Swap (Warranty)</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Full Frame Swap (Non-Warranty)</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Assembled Geared Bike</td>
+                        <td>$70</td>
+                    </tr>
+                    <tr>
+                        <td>Complete Bike Build (Bare Frame)</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Box Bike for Shipping</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Insurance Estimate for Labor and Parts</td>
+                        <td>$20</td>
+                    </tr>
 
-            </section>
+                </tbody>
+            </table>
+            
+            <table class="gridtable">
+                <thead>
+                    <tr>
+                        <th colspan="2">Installation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Install Basket</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Fender (Bolt-On)</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Install Fender (Clip-On)</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Install Computer w/o Cadence</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Computer w/ Cadence</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Install Front Rack</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Install Rear Rack</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Install Kick Stand</td>
+                        <td>$5</td>
+                    </tr>
+                    <tr>
+                        <td>Install Training Wheels</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Install Saddle</td>
+                        <td>$6</td>
+                    </tr>
+                    <tr>
+                        <td>Install Pedals</td>
+                        <td>$75</td>
+                    </tr>
 
-            <script>
-                
-                var thead = document.querySelector('thead');
-                var table = document.querySelector('table');
+                </tbody>
+            </table>
+            
+            <table class="gridtable">
+                <thead>
+                    <tr>
+                        <th colspan="2">Repairs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Cut Threadless Fork</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Rigid Fork</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Suspension Fork</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Straighten and Align Fork Dropouts</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Handlebar</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Stem</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install BMX Bar or Stem</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Tape Drop Bars</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Tape Aero Bars</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Grips on Flat Bar</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Bar-Ends</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Adjust Threaded</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Adjust Threadless Headset</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Headset Cups on Bare Frame</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install Headset on Complete Bike</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Overhaul Headset</td>
+                        <td>$15</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+  
+<!--            <section>
+                <div id="content"></div>
 
-                var requestURL = 'https://github.com/kaisbouy/kaisbouy.github.io/blob/master/assignments/term_website_project/data/service_pricing.json';
-                var request = new XMLHttpRequest();
-                request.open('GET', requestURL);
-                request.responseType = 'json';
-                request.send();
-                request.onload = function() {
-                    var priceList = request.response;
-                    populateThead(priceList);/*--- Price List Functions*/
-                    showPrices(priceList);/*------- Price List Functions*/
-                }
+            </section>-->
 
-                function populateThead(jsonObj) {
-                    var myH2 = document.createElement('h2')
-                    myH2.textContent = jsonObj['data'];
-                    thead.appendChild(myH2);
-                    
-                    var myTable = document.createElement(tbody);
-                    myPara.textContent = ''
-                    
-                    
-                    
-                    var work = jsonObj['services'];
-                    
-                    for(var i = 0; i < work.length; i++) {
-                        
-/*
-                        var myArticle = document.createElement('article');
-*/
-                        var myH2 = document.getElementById('h2');
-                        var myTableHead = document.getElementById('th');
-                        var myTableData = document.getElementById('td');
-                        
-                        myH2.textContent = work[i].services;
-                        myTableHead.textContent = work[i].service;
-                        myTableData.textContent = '$' + work[i].price;
-                        
-                        var superPowers = work[i].powers;
-                        
-                        for(var j = 0; j < superPowers.length; j++) {
-                            var listItem = document.createElement('li');
-                            listItem.textContent = superPowers[j];
-                            myList.appendChild(listItem);
+<!--            <script>
+                var MOUNTAINS = [
+                    {"service":"Basic Tune-up","price":75},
+                    {"service":"Deluxe Tune-up","price":150}
+                ];	
+
+
+                function buildTable(data) {
+                    var table = document.createElement("table");
+                    table.className="gridtable";
+                    var thead = document.createElement("thead");
+                    var tbody = document.createElement("tbody");
+                    var headRow = document.createElement("tr");
+                    ["Service","Price"].forEach(function(el) {
+                        var th=document.createElement("th");
+                        th.appendChild(document.createTextNode(el));
+                        headRow.appendChild(th);
+                    });
+                    thead.appendChild(headRow);
+                    table.appendChild(thead); 
+                    data.forEach(function(el) {
+                        var tr = document.createElement("tr");
+                        for (var o in el) {  
+                            var td = document.createElement("td");
+                            td.appendChild(document.createTextNode(el[o]))
+                            tr.appendChild(td);
                         }
-                        myArticle.appendChild(myH2);
-                        myArticle.appendChild(myTableHead);
-                        myArticle.appendChild(myTableData);
-
-                        section.appendChild(myArticle);
-                    }
+                        tbody.appendChild(tr);  
+                    });
+                    table.appendChild(tbody);             
+                    return table;
                 }
-            </script>
+                window.onload=function() {
+                    document.getElementById("content").appendChild(buildTable(MOUNTAINS));
+                }
+            </script>-->
             
-            
-            
-            
-            
-            
-            
-            
-            
+             
         </main>
 
         <footer class="clearfix">
